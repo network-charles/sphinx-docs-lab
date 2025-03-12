@@ -1,0 +1,12 @@
+## Local set up
+source .venv/bin/activate  
+cd docs/
+
+## Build once
+make html
+
+## Build and watch changes
+python -m http.server --directory build/html 9000
+
+## Clean up
+make clean
